@@ -15,6 +15,10 @@ void setup()
   pinMode(lfcw,OUTPUT); pinMode(lfccw,OUTPUT); pinMode(lbcw,OUTPUT); pinMode(lbccw,OUTPUT);
 
   thrustN.attach(2); thrustS.attach(3); thrustW.attach(4); thrustE.attach(5); 
+  
+  // ====================== ARMING =================== (ye ya to yaha pr hona chahiye ya fir loop me, to chala ke hit and trial kar lo)
+  
+  // while(channeli.value<1200);            // esa kuch karna padega, basically apan remote se ek signal ka wait kar rahe he
 }
 
 void fly(int hover)
